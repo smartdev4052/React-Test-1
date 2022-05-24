@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={ <PromotionList promotions={data.promotion_objects}/> } />
-        <Route path="/:id" element={ <PromotionDetail/> } />
+        <Route path="/:id" element={ <PromotionDetail promotions={data.promotion_objects}/> } />
       </Routes>
     </div>
   );
