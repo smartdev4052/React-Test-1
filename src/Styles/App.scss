@@ -1,0 +1,11 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+@import "./Promotion.scss";
+
+.App {
+  font-family: 'Arial';
+  color: $gray;
+  font-size: $small;
+  background-image: linear-gradient(#cccccc, $white) !important;
+}

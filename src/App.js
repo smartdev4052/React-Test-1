@@ -4,7 +4,6 @@ import PromotionList from './Promotion/PromotionList';
 import PromotionDetail from './Promotion/PromotionDetail';
 
 import data from './json/webdevtest-data.json';
-import './App.scss';
 
 function App() {
   return (
