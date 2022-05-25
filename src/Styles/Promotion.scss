@@ -1,0 +1,86 @@
+@import "./_variables.scss";
+
+.promo-app {
+  width: 100%;
+  max-width: 677px;
+  .promo-image {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .promo-link {
+    font-size: $medium;
+    color: $blue;
+  }
+  .promo-link-div {
+    font-size: $medium;
+    color: $gray;
+  }
+  .promo-summary {
+    margin-top: 1rem;
+  }
+  .promo-date {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.promotion-detail-app {
+  width: 100%;
+  max-width: 677px;
+  .promotion-entry {
+    margin-top: 2rem;
+  }
+}
+
+.table-app {
+  text-align: center;
+  .table-title {
+    font-size: $large;
+    font-weight: 530;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .table-summary {
+    margin-bottom: 0.5rem;
+  }
+  table {
+    width: 100%;
+    tr {
+      height: 2.3rem;
+    }
+    thead {
+      background-color: $gray;
+      color: $white;
+    }
+    tbody {
+      background-color: #aaa;
+    }
+    @include phone {
+      border: 0;
+      font-size: 1.14em;
+        thead {
+          display: none;
+        }
+        tr {
+          display: block;
+          height: auto;
+          border-bottom: 1px solid $gray;
+        }
+        td {
+          border-bottom: 1px solid #bbb;
+          padding: 0.5rem;
+          padding-bottom: 1.2rem;
+          display: block;
+          text-align: right;
+          &::before {
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+    }
+  }
+}
